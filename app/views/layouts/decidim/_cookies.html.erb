@@ -1,0 +1,9 @@
+<% unless cookies_accepted? %>
+  <%= stylesheet_link_tag "decidim/cookies/cookies" %>
+  <%= javascript_include_tag "decidim/cookies/cookies_config" %>
+  <script type="text/javascript" charset="utf-8">
+      <% if current_organization.logo.present? %>
+        window.orejimeConfig.logo.src= "<%= current_organization.logo.medium.url %>";
+      <% end %>
+  </script>
+<% end %>
