@@ -3,17 +3,20 @@
 // TODO: Use SASS project variables
 
 .orejime {
-  &-Notice-logo {
-    max-width: 50px;
-  }
-  &-Notice {
-    background-color: #f7f7f7;
-    max-width: 500px;
 
+  &-Notice, &-Modal {
+    background-color: #f7f7f7;
     p {
       color: black;
     }
+  }
 
+  &-Notice-logo {
+    max-width: 50px;
+  }
+
+  &-Notice {
+    max-width: 500px;
     &-purposes {
       color: var(--primary);
     }
@@ -22,4 +25,31 @@
       position: absolute;
     }
   }
+
+
+
+  &-Button {
+    &--save {
+      background: #57d685;
+    }
+    &--decline {
+      background: #ff6767;
+    }
+    &--info {
+      background: #ec5840;
+    }
+  }
+  &-Modal {
+    &-privacyPolicyLink {
+      color: var(--primary);
+    }
+
+    &-saveButton {
+      background: var(--primary);
+    }
+  }
+}
+
+#orejime-modal-title{
+  color: var(--primary)
 }
