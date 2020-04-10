@@ -13,38 +13,8 @@
         gdprCompliant: true,
         default: false,
         logo: false,
-        lang: "en",
         cookieName: "decidim-cc",
-        debug: true,
-        translations: {
-            en: {
-                consentModal: {
-                    description: "Here is an example of Orejime. View the source code to see how everything is done.",
-                },
-                decidim: {
-                    description: "Allows to check if the user has accepted the cookies",
-                },
-                "inline-tracker": {
-                    description: "Example of an inline tracking script that sets a dummy cookie",
-                },
-                "external-tracker": {
-                    description: "Example of an external tracking script that sets a dummy cookie",
-                },
-                "always-on": {
-                    description: "this <a href=\"http://example.com\">example</a> app will not set any cookie",
-                },
-                "disabled-by-default": {
-                    description: "this example app will not set any cookie",
-                },
-                purposes: {
-                    analytics: "Analytics",
-                    security: "Security",
-                    ads: "Ads",
-                    tracking: "Tracking",
-                    checking: "Check User's acceptance"
-                }
-            },
-        },
+        translations: {},
         apps: [
             {
                 name: "matomo",
@@ -54,6 +24,7 @@
                     "pk_id",
                     "pk_ses",
                 ],
+                // Here purposes refers to purposes translations defined in locales: en.decidim.components.cookies.modal.purposes
                 purposes: ["tracking","analytics"]
             }
         ],
