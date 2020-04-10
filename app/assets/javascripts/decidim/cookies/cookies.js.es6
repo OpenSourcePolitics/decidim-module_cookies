@@ -12,6 +12,7 @@
         privacyPolicy: "#privacyPolicy",
         gdprCompliant: true,
         default: false,
+        logo: false,
         lang: "en",
         cookieName: "decidim",
         debug: true,
@@ -48,6 +49,11 @@
             {
                 name: "matomo",
                 title: "Matomo",
+                cookies: [
+                    "matomo_session",
+                    "pk_id",
+                    "pk_ses",
+                ],
                 purposes: ["tracking","analytics"]
             },
             {

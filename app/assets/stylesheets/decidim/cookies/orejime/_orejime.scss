@@ -1,0 +1,25 @@
+// Override Orejime default design
+
+// TODO: Use SASS project variables
+
+.orejime {
+  &-Notice-logo {
+    max-width: 50px;
+  }
+  &-Notice {
+    background-color: #f7f7f7;
+    max-width: 500px;
+
+    p {
+      color: black;
+    }
+
+    &-purposes {
+      color: var(--primary);
+    }
+    &-actionItem--info {
+      right: 0;
+      position: absolute;
+    }
+  }
+}

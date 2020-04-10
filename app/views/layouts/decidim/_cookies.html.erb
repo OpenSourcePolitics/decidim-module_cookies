@@ -1,9 +1,21 @@
 <% unless cookies_accepted? %>
   <%= stylesheet_link_tag "decidim/cookies/cookies" %>
-  <%= javascript_include_tag "decidim/cookies/cookies_config" %>
+  <%= javascript_include_tag "decidim/cookies/cookies" %>
   <script type="text/javascript" charset="utf-8">
       <% if current_organization.logo.present? %>
-        window.orejimeConfig.logo.src= "<%= current_organization.logo.medium.url %>";
+        window.orejimeConfig.logo = {
+            src: "<%= current_organization.logo.medium.url %>",
+            alt: "Logo organization"
+        };
       <% end %>
+  </script>
+
+  <button class="reset-button">RESET</button>
+
+  <script type="text/javascript" charset="utf-8">
+      document.querySelector('.reset-button').addEventListener('click', function() {
+          orejime.internals.manager.resetConsent();
+          location.reload();
+      }, false);
   </script>
 <% end %>
