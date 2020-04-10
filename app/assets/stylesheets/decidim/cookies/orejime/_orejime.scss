@@ -3,7 +3,6 @@
 // TODO: Use SASS project variables
 
 .orejime {
-
   &-Notice, &-Modal {
     background-color: #f7f7f7;
     p {
@@ -26,7 +25,10 @@
     }
   }
 
-
+  &-AppItem-title,
+  &-AppItem-switchLabel {
+    color: #3d393c;
+  }
 
   &-Button {
     &:hover {
