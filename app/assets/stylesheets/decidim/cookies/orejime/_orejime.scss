@@ -29,6 +29,9 @@
 
 
   &-Button {
+    &:hover {
+      cursor: pointer;
+    }
     &--save {
       background: #57d685;
     }
