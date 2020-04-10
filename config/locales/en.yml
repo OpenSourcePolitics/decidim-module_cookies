@@ -8,3 +8,11 @@ en:
     components:
       cookies:
         name: Cookies
+        modal:
+          description: Please read attentively our cookies usage policy.
+          purposes:
+            analytics: Analytics
+            security: Security
+            ads: Ads
+            tracking: Tracking
+            checking: Check cookies acceptance

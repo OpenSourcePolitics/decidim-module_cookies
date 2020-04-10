@@ -11,5 +11,18 @@
           alt: "Logo organization"
       };
       <% end %>
+
+      window.orejimeConfig.translations["<%= I18n.locale %>"] = {
+        consentModal: {
+            description: "<%= t("decidim.components.cookies.modal.description") %>",
+        },
+        purposes: {
+            analytics: "<%= t("decidim.components.cookies.modal.purposes.analytics") %>",
+            security: "<%= t("decidim.components.cookies.modal.purposes.security") %>",
+            ads: "<%= t("decidim.components.cookies.modal.purposes.ads") %>",
+            tracking: "<%= t("decidim.components.cookies.modal.purposes.tracking") %>",
+            checking: "<%= t("decidim.components.cookies.modal.purposes.checking") %>"
+        }
+      }
   </script>
 <% end %>
