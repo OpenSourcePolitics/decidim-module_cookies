@@ -1,5 +1,9 @@
 ---
 en:
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Revoke cookies acceptance
   decidim:
     components:
       cookies:

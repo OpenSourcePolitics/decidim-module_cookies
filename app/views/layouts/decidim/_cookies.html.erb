@@ -1,12 +1,15 @@
-<% unless cookies_accepted? %>
+<%= javascript_include_tag "decidim/cookies/cookies" %>
+
+<% if cookies_accepted? %>
+  <%= javascript_include_tag "decidim/cookies/revoke_cookies_acceptance" %>
+<% else %>
   <%= stylesheet_link_tag "decidim/cookies/cookies" %>
-  <%= javascript_include_tag "decidim/cookies/cookies" %>
   <script type="text/javascript" charset="utf-8">
       <% if current_organization.logo.present? %>
-        window.orejimeConfig.logo = {
-            src: "<%= current_organization.logo.medium.url %>",
-            alt: "Logo organization"
-        };
+      window.orejimeConfig.logo = {
+          src: "<%= current_organization.logo.medium.url %>",
+          alt: "Logo organization"
+      };
       <% end %>
   </script>
 <% end %>

@@ -14,7 +14,7 @@
         default: false,
         logo: false,
         lang: "en",
-        cookieName: "decidim",
+        cookieName: "decidim-cc",
         debug: true,
         translations: {
             en: {
@@ -55,13 +55,6 @@
                     "pk_ses",
                 ],
                 purposes: ["tracking","analytics"]
-            },
-            {
-                name: "decidim",
-                title: "Decidim CC",
-                cookies: ["decidim-cc"],
-                purposes: ["checking"],
-                required: true
             }
         ],
     };
