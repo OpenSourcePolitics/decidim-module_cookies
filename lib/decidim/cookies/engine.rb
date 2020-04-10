@@ -16,7 +16,7 @@ module Decidim
       end
 
       initializer "decidim_cookies.assets" do |app|
-        app.config.assets.precompile += %w[decidim_cookies_manifest.js decidim_cookies_manifest.css]
+        app.config.assets.precompile += %w(decidim_cookies_manifest.js decidim_cookies_manifest.css)
       end
     end
   end
