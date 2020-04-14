@@ -1,23 +1,23 @@
 // Override Orejime default design
 
-// TODO: Use SASS project variables
-
-.orejime {
-
-  &-Notice, &-Modal {
+.orejime{
+  &-Notice,
+  &-Modal{
     background-color: #f7f7f7;
-    p {
+
+    p{
       color: black;
     }
   }
 
-  &-Notice-logo {
+  &-Notice-logo{
     max-width: 50px;
   }
 
-  &-Notice {
+  &-Notice{
     max-width: 500px;
-    &-actionItem--info {
+
+    &-actionItem--info{
       right: 0;
       position: absolute;
     }
@@ -25,32 +25,35 @@
 
   &-AppItem-title,
   &-Notice-purposes,
-  &-Modal-privacyPolicyLink {
+  &-Modal-privacyPolicyLink{
     color: var(--secondary);
   }
 
-
-  &-Button {
-    &:hover {
+  &-Button{
+    &:hover{
       cursor: pointer;
     }
-    &--save {
+
+    &--save{
       background: #57d685;
     }
-    &--decline {
+
+    &--decline{
       background: #ff6767;
     }
-    &--info {
+
+    &--info{
       background: #ec5840;
     }
   }
-  &-Modal {
-    &-saveButton {
+
+  &-Modal{
+    &-saveButton{
       background: var(--primary);
     }
   }
 }
 
 #orejime-modal-title{
-  color: var(--primary)
+  color: var(--primary);
 }

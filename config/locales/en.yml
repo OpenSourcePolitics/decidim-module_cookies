@@ -1,16 +1,13 @@
 ---
 en:
-  layouts:
-    decidim:
-      footer:
-        revoke_cookies: Revoke cookies acceptance
   decidim:
     components:
       cookies:
         analytics:
           description: Allows to track to improve user experience
         consent_modal:
-          description: This modal gives the opportunity to filter the cookies you want.
+          description: This modal gives the opportunity to filter the cookies you
+            want.
         decidim:
           description: Allows to check if the user has accepted the cookies
         dummy:
@@ -19,8 +16,12 @@ en:
           description: Allows to track to improve user experience
         name: Cookies
         purposes:
-          analytics: Analytics
-          security: Security
           ads: Ads
-          tracking: Tracking
+          analytics: Analytics
           checking: Check User's acceptance
+          security: Security
+          tracking: Tracking
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Revoke cookies acceptance
