@@ -1,0 +1,26 @@
+---
+fr:
+  decidim:
+    components:
+      cookies:
+        analytics:
+          description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
+        consent_modal:
+          description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
+        decidim:
+          description: Permet de vérifier quels cookies l'utilisateur accepte
+        dummy:
+          description: Un faux cookie pour montrer avec plus de cookies
+        matomo:
+          description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
+        name: Cookies
+        purposes:
+          ads: Contenu additionnel
+          analytics: Analyses
+          checking: Verifier le consentement de l'utilisateur
+          security: Sécurité
+          tracking: Tracking
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Annuler l'acceptation des cookies
