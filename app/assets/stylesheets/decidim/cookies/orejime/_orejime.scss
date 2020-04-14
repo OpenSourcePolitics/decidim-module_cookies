@@ -17,15 +17,17 @@
 
   &-Notice {
     max-width: 500px;
-    &-purposes {
-      color: var(--primary);
-    }
     &-actionItem--info {
       right: 0;
       position: absolute;
     }
   }
 
+  &-AppItem-title,
+  &-Notice-purposes,
+  &-Modal-privacyPolicyLink {
+    color: var(--secondary);
+  }
 
 
   &-Button {
@@ -43,10 +45,6 @@
     }
   }
   &-Modal {
-    &-privacyPolicyLink {
-      color: var(--primary);
-    }
-
     &-saveButton {
       background: var(--primary);
     }
