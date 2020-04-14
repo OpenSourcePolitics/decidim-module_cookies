@@ -7,4 +7,20 @@ en:
   decidim:
     components:
       cookies:
+        analytics:
+          description: Allows to track to improve user experience
+        consent_modal:
+          description: This modal gives the opportunity to filter the cookies you want.
+        decidim:
+          description: Allows to check if the user has accepted the cookies
+        dummy:
+          description: Just a dummy cookie to show multiple usage of cookies
+        matomo:
+          description: Allows to track to improve user experience
         name: Cookies
+        purposes:
+          analytics: Analytics
+          security: Security
+          ads: Ads
+          tracking: Tracking
+          checking: Check User's acceptance
