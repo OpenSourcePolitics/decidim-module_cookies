@@ -8,3 +8,6 @@ ignore_unused:
 
 ignore_missing:
   - decidim.participatory_processes.scopes.global
+  - decidim.accessibility.skip_button
+  - layouts.decidim.header.*
+  - layouts.decidim.footer.*
