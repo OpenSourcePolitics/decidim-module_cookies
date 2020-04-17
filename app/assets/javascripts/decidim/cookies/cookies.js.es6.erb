@@ -10,38 +10,14 @@
 (() => {
     window.orejimeConfig = {
         appElement: "#app",
-        privacyPolicy: "#privacyPolicy",
+        privacyPolicy: "/pages/terms-and-conditions",
         gdprCompliant: true,
         default: false,
         logo: false,
         lang: "<%= I18n.locale %>",
         cookieName: "decidim-cc",
-        translations: {
-            "<%= I18n.locale %>": {
-                consentModal: {
-                    description: "<%= I18n.t('consent_modal.description', scope: "decidim.components.cookies") %>",
-                },
-                decidim: {
-                    description: "<%= I18n.t('decidim.description', scope: "decidim.components.cookies") %>",
-                },
-                dummy: {
-                    description: "<%= I18n.t('dummy.description', scope: "decidim.components.cookies") %>",
-                },
-                matomo: {
-                    description: "<%= I18n.t('matomo.description', scope: "decidim.components.cookies") %>",
-                },
-                analytics: {
-                    description: "<%= I18n.t('analytics.description', scope: "decidim.components.cookies") %>",
-                },
-                purposes: {
-                    analytics: "<%= I18n.t('analytics', scope: "decidim.components.cookies.purposes") %>",
-                    security: "<%= I18n.t('security', scope: "decidim.components.cookies.purposes") %>",
-                    ads: "<%= I18n.t('ads', scope: "decidim.components.cookies.purposes") %>",
-                    tracking: "<%= I18n.t('tracking', scope: "decidim.components.cookies.purposes") %>",
-                    checking: "<%= I18n.t('checking', scope: "decidim.components.cookies.purposes") %>",
-                }
-            }
-        },
+        // translations have to be defined in `layouts/decidim/_cookies.html.erb` because of assets compilation
+        translations: {},
         apps: [
             {
                 name: "dummy",
@@ -56,6 +32,13 @@
                 title: "Google analytics",
                 cookies: [
                     "_ga",
+                    "_gat",
+                    "_gid",
+                    "__utma",
+                    "__utmb",
+                    "__utmc",
+                    "__utmt",
+                    "__utmz"
                 ],
                 purposes: ["tracking","analytics"]
             },
@@ -66,6 +49,8 @@
                     "matomo_session",
                     "pk_id",
                     "pk_ses",
+                    "_pk_ref",
+                    "_pk_cvar"
                 ],
                 purposes: ["tracking","analytics"]
             },
@@ -77,4 +62,19 @@
             }
         ],
     };
+
+    console.log("<%= I18n.locale %>");
+
+    $(document).on('click', '.orejime-Notice-actionItem--save > .orejime-Notice-saveButton',() => {
+        acceptAll()
+        orejime.internals.manager.saveConsents()
+        orejime.internals.manager.applyConsents()
+    });
+
+    // Override default behaviour of "Accept all" button. Allows to accept all cookies defined ( optionals and required )
+    function acceptAll() {
+        window.orejimeConfig.apps.map((app) => {
+            orejime.internals.manager.updateConsent(app, true)
+        })
+    }
 })(window);
