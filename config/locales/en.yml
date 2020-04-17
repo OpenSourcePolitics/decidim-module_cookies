@@ -3,6 +3,7 @@ en:
   decidim:
     components:
       cookies:
+        accept: Accept all
         analytics:
           description: Allows to track to improve user experience
         consent_modal:
