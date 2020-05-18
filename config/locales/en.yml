@@ -3,4 +3,26 @@ en:
   decidim:
     components:
       cookies:
+        accept: Accept all
+        analytics:
+          description: Allows to track to improve user experience
+        consent_modal:
+          description: This modal gives the opportunity to filter the cookies you
+            want.
+        decidim:
+          description: Allows to check if the user has accepted the cookies
+        dummy:
+          description: Just a dummy cookie to show multiple usage of cookies
+        matomo:
+          description: Allows to track to improve user experience
         name: Cookies
+        purposes:
+          ads: Ads
+          analytics: Analytics
+          checking: Check User's acceptance
+          security: Security
+          tracking: Tracking
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Revoke cookies acceptance

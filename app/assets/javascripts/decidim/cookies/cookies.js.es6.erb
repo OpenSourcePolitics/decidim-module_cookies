@@ -1,0 +1,79 @@
+// This file is the Orejime configuration
+// Orejime source : https://github.com/openfed/orejime
+// Forked from : https://github.com/empreinte-digitale/orejime
+
+// Here you can defined the cookies used on your platform and allows users to deactivate some unwanted
+// Please,
+
+// = require decidim/cookies/orejime
+
+(() => {
+    window.orejimeConfig = {
+        appElement: "#app",
+        // Please update privacyPolicy to match the route you need
+        privacyPolicy: "/pages/terms-and-conditions",
+        gdprCompliant: true,
+        default: false,
+        logo: false,
+        lang: "<%= I18n.locale %>",
+        cookieName: "decidim-cc",
+        // translations have to be defined in `layouts/decidim/_cookies.html.erb` because of assets compilation
+        translations: {},
+        apps: [
+            {
+                name: "dummy",
+                title: "Dummy cookie",
+                cookies: [
+                    "dummy",
+                ],
+                purposes: ["security","ads"]
+            },
+            {
+                name: "analytics",
+                title: "Google analytics",
+                cookies: [
+                    "_ga",
+                    "_gat",
+                    "_gid",
+                    "__utma",
+                    "__utmb",
+                    "__utmc",
+                    "__utmt",
+                    "__utmz"
+                ],
+                purposes: ["tracking","analytics"]
+            },
+            {
+                name: "matomo",
+                title: "Matomo",
+                cookies: [
+                    "matomo_session",
+                    "pk_id",
+                    "pk_ses",
+                    "_pk_ref",
+                    "_pk_cvar"
+                ],
+                purposes: ["tracking","analytics"]
+            },
+            {
+                name: "decidim",
+                title: "decidim-cc",
+                required: true,
+                purposes: ["checking"]
+            }
+        ],
+    };
+
+    $(document).on('click', '.orejime-Notice-actionItem--save > .orejime-Notice-saveButton',() => {
+        acceptAll()
+        orejime.internals.manager.saveConsents()
+        orejime.internals.manager.applyConsents()
+    });
+
+    // Override default behaviour of "Accept all" button. Allows to accept all cookies defined ( optionals and required )
+    function acceptAll() {
+        window.orejimeConfig.apps.map((app) => {
+            orejime.internals.manager.updateConsent(app, true)
+        })
+    }
+})(window);

@@ -12,7 +12,7 @@ Space.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-cookies
+gem 'decidim-cookies'
 ```
 
 And then execute:

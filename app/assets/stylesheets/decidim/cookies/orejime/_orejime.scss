@@ -1,0 +1,59 @@
+// Override Orejime default design
+
+.orejime{
+  &-Notice,
+  &-Modal{
+    background-color: #f7f7f7;
+
+    p{
+      color: black;
+    }
+  }
+
+  &-Notice-logo{
+    max-width: 50px;
+  }
+
+  &-Notice{
+    max-width: 500px;
+
+    &-actionItem--info{
+      right: 0;
+      position: absolute;
+    }
+  }
+
+  &-AppItem-title,
+  &-Notice-purposes,
+  &-Modal-privacyPolicyLink{
+    color: var(--secondary);
+  }
+
+  &-Button{
+    &:hover{
+      cursor: pointer;
+    }
+
+    &--save{
+      background: #57d685;
+    }
+
+    &--decline{
+      background: #ff6767;
+    }
+
+    &--info{
+      background: #ec5840;
+    }
+  }
+
+  &-Modal{
+    &-saveButton{
+      background: var(--primary);
+    }
+  }
+}
+
+#orejime-modal-title{
+  color: var(--primary);
+}
