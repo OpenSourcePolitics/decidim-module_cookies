@@ -19,49 +19,7 @@
         cookieName: "decidim-cc",
         // translations have to be defined in `layouts/decidim/_cookies.html.erb` because of assets compilation
         translations: {},
-        apps: [
-            {
-                name: "dummy",
-                title: "Dummy cookie",
-                cookies: [
-                    "dummy",
-                ],
-                purposes: ["security","ads"]
-            },
-            {
-                name: "analytics",
-                title: "Google analytics",
-                cookies: [
-                    "_ga",
-                    "_gat",
-                    "_gid",
-                    "__utma",
-                    "__utmb",
-                    "__utmc",
-                    "__utmt",
-                    "__utmz"
-                ],
-                purposes: ["tracking","analytics"]
-            },
-            {
-                name: "matomo",
-                title: "Matomo",
-                cookies: [
-                    "matomo_session",
-                    "pk_id",
-                    "pk_ses",
-                    "_pk_ref",
-                    "_pk_cvar"
-                ],
-                purposes: ["tracking","analytics"]
-            },
-            {
-                name: "decidim",
-                title: "decidim-cc",
-                required: true,
-                purposes: ["checking"]
-            }
-        ],
+        apps: [],
     };
 
     $(document).on('click', '.orejime-Notice-actionItem--save > .orejime-Notice-saveButton',() => {
