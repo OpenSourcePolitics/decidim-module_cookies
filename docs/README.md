@@ -6,19 +6,50 @@ This module aims to provide an RGPD compliant cookies banner using Orejime (http
 
 You want to implement this module in your Decidim application ?
 
-Please add this gem into your Gemfile
+#### Please add this gem into your Gemfile
 
 ```ruby
 gem 'decidim-cookies'
 ```
 
-And then run bundle 
+#### Run bundle 
 
 ```bash
 bundle
 ```
 
-Then override the main config file of Orejime configuration that you can find in this app in `/app/assets/javascripts/cookies/cookies.js.es6.erb`
+#### Configure the cookies banner
+
+You can find the default banner configuration in `/app/assets/javascripts/decidim/cookies/cookies.js.es6.erb` of this module.
+
+1. Define in the initializers the cookies you want
+
+This example bellow is the default configuration
+```ruby
+    Rails.application.config.cookies = [
+          {
+              name: "analytics",
+              title: "Google analytics",
+              cookies: %w(_ga _gat _gid __utma __utmb __utmc __utmt __utmz),
+              purposes: %w(tracking analytics)
+          },
+          {
+              name: "matomo",
+              title: "Matomo",
+              cookies: %w(matomo_session pk_id pk_ses _pk_ref _pk_cvar),
+              purposes: %w(tracking analytics)
+          },
+          {
+              name: "decidim",
+              title: "decidim-cc",
+              required: true,
+              purposes: %w(checking)
+          }
+      ]
+```
+
+Note: For the last one cookie named "decidim", please do not add "decidim-cc" in cookies key because it could occurs troubles.
+
 
 ## Configuration
 
@@ -35,6 +66,7 @@ Concern fields are
 * `lang`, allows to update Orejime banner language when user switch language platform 
 * `translations`, allows to fetch translations defined in Decidim's app. You can find Orejime translations at (https://github.com/empreinte-digitale/orejime/blob/master/src/translations/en.yml)
 * `logo`, allows to set a logo if the organization has one 
+* `apps`, exhaustive list of cookies 
 
 ## Notes 
 
