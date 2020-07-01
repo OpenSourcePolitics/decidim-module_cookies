@@ -19,7 +19,14 @@
         cookieName: "decidim-cc",
         // translations have to be defined in `layouts/decidim/_cookies.html.erb` because of assets compilation
         translations: {},
-        apps: [],
+        apps: [
+            {
+                name: "decidim",
+                title: "decidim-cc",
+                required: true,
+                purposes: ["checking"]
+            }
+        ],
     };
 
     $(document).on('click', '.orejime-Notice-actionItem--save > .orejime-Notice-saveButton',() => {
