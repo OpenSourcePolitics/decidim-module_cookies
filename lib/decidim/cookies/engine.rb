@@ -22,12 +22,6 @@ module Decidim
       initializer "decidim_cookies.cookies" do |app|
         app.config.cookies = [
               {
-                  name: "analytics",
-                  title: "Google analytics",
-                  cookies: %w(_ga _gat _gid __utma __utmb __utmc __utmt __utmz),
-                  purposes: %w(tracking analytics)
-              },
-              {
                   name: "matomo",
                   title: "Matomo",
                   cookies: %w(matomo_session pk_id pk_ses _pk_ref _pk_cvar),
