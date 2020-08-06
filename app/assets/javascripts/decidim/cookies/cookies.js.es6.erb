@@ -17,7 +17,7 @@
         logo: false,
         lang: "<%= I18n.locale %>",
         cookieName: "decidim-cc",
-        // translations have to be defined in `layouts/decidim/_cookies.html.erb` because of assets compilation
+        // translations have to be defined in `/app/views/layouts/decidim/_cookies.html.erb` because of assets compilation
         translations: {},
         apps: [
             {
@@ -25,6 +25,12 @@
                 title: "decidim-cc",
                 required: true,
                 purposes: ["checking"]
+            },
+            {
+                name: "decidim_session",
+                title: "decidim_session",
+                required: true,
+                purposes: ["session"]
             }
         ],
     };

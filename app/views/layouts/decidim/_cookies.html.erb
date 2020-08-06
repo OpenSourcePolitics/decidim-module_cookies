@@ -19,8 +19,8 @@
               decidim: {
                   description: "<%= I18n.t('decidim.description', scope: "decidim.components.cookies") %>",
               },
-              dummy: {
-                  description: "<%= I18n.t('dummy.description', scope: "decidim.components.cookies") %>",
+              decidim_session: {
+                  description: "<%= I18n.t('decidim_session.description', scope: "decidim.components.cookies") %>",
               },
               matomo: {
                   description: "<%= I18n.t('matomo.description', scope: "decidim.components.cookies") %>",
@@ -30,6 +30,7 @@
                   security: "<%= I18n.t('security', scope: "decidim.components.cookies.purposes") %>",
                   ads: "<%= I18n.t('ads', scope: "decidim.components.cookies.purposes") %>",
                   tracking: "<%= I18n.t('tracking', scope: "decidim.components.cookies.purposes") %>",
+                  session: "<%= I18n.t('session', scope: "decidim.components.cookies.purposes") %>",
                   checking: "<%==  escape_javascript I18n.t('checking', scope: "decidim.components.cookies.purposes") %>"
               }
           }
@@ -38,7 +39,7 @@
       <% if current_organization.logo.present? %>
             window.orejimeConfig.logo = {
                 src: "<%= current_organization.logo.medium.url %>",
-                alt: "Logo organization"
+                alt: "<%= current_organization.name %>"
             };
       <% end %>
 
