@@ -12,7 +12,8 @@ en:
         decidim:
           description: Allows to check if the user has accepted the cookies
         decidim_session:
-          description: Allows to keep the user session active for a limited time. It is required to improve user experience on Decidim
+          description: Allows to keep the user session active for a limited time.
+            It is required to improve user experience on Decidim
         matomo:
           description: Allows to track to improve user experience
         name: Cookies

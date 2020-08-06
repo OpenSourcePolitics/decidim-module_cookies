@@ -5,15 +5,19 @@ fr:
       cookies:
         accept: Tout accepter
         analytics:
-          description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
+          description: Permet de récolter des informations afin d'améliorer l'expérience
+            utilisateur
         consent_modal:
           description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
-          description: Permet de maintenir la session d'un utilisateur active pour un temps limité. Ce cookie est obligatoire pour accroitre l'expérience utilisateur sur Decidim
+          description: Permet de maintenir la session d'un utilisateur active pour
+            un temps limité. Ce cookie est obligatoire pour accroitre l'expérience
+            utilisateur sur Decidim
         matomo:
-          description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
+          description: Permet de récolter des informations afin d'améliorer l'expérience
+            utilisateur
         name: Cookies
         purposes:
           ads: Contenu additionnel
