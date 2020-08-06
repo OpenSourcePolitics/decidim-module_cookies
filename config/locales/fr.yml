@@ -10,8 +10,8 @@ fr:
           description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
-        dummy:
-          description: Un faux cookie pour montrer avec plus de cookies
+        decidim_session:
+          description: Permet de maintenir la session d'un utilisateur active pour un temps limité. Ce cookie est obligatoire pour accroitre l'expérience utilisateur sur Decidim
         matomo:
           description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
         name: Cookies
@@ -20,6 +20,7 @@ fr:
           analytics: Analyses
           checking: Verifier le consentement de l'utilisateur
           security: Sécurité
+          session: Session
           tracking: Tracking
   layouts:
     decidim:

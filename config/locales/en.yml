@@ -11,8 +11,8 @@ en:
             want.
         decidim:
           description: Allows to check if the user has accepted the cookies
-        dummy:
-          description: Just a dummy cookie to show multiple usage of cookies
+        decidim_session:
+          description: Allows to keep the user session active for a limited time. It is required to improve user experience on Decidim
         matomo:
           description: Allows to track to improve user experience
         name: Cookies
@@ -21,6 +21,7 @@ en:
           analytics: Analytics
           checking: Check User's acceptance
           security: Security
+          session: Session
           tracking: Tracking
   layouts:
     decidim:

@@ -18,6 +18,17 @@ module Decidim
       initializer "decidim_cookies.assets" do |app|
         app.config.assets.precompile += %w(decidim_cookies_manifest.js decidim_cookies_manifest.css)
       end
+
+      initializer "decidim_cookies.cookies" do |app|
+        app.config.cookies = [
+          {
+              name: "matomo",
+              title: "Matomo",
+              cookies: %w(matomo_session pk_id pk_ses _pk_ref _pk_cvar),
+              purposes: %w(tracking analytics)
+          }
+        ]
+      end
     end
   end
 end
