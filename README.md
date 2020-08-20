@@ -55,6 +55,24 @@ When you add new cookie, you have to provide translation for language activated 
 
 Repeat this process if you create new purpose
 
+## List of cookies used by Decidim
+
+Cookies by default on Decidim application 
+| Name | Description | Required |
+| --- | --- | --- |
+| decidim-cc | Allows to check if the user has accepted the cookies | [x] |
+| _decidim_session | Allows to keep the user session active for a limited time | [x] |
+
+Non exhaustive list of cookies you may encounter in a Decidim instance. Those cookies are not by default in Decidim applications.
+
+| Name | Description | Required | Documentation |
+| --- | --- | --- | --- |
+| JSESSIONID | The JSESSIONID cookie is used to store a session identifier so that New Relic can monitor session counts for an application. | [ ] | [Link](https://docs.newrelic.com/docs/browser/new-relic-browser/page-load-timing-resources/new-relic-cookies-used-browser#jsessionid)
+| Matomo | Allows to track to improve user experience | [ ] | [Link](https://fr.matomo.org/faq/general/faq_146/)
+| Google Analytics | Allows to track to improve user experience | [ ] | [Link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)
+
+
+
 ## Bugs ? 
 
 Please check the [known issues file](docs/known_issues.md)
