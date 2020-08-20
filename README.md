@@ -2,6 +2,14 @@
 
 This module provide a cookies banner using Orejime (https://github.com/empreinte-digitale/orejime).
 
+## alt/bosa branch
+
+Filtered cookies 
+
+* `decidim-cc`
+* `_decidim_session`
+* `JSESSIONID`
+
 ## Usage
 
 The banner is visible on every page except the administrators section.
