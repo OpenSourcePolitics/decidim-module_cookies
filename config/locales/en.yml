@@ -28,3 +28,6 @@ en:
     decidim:
       footer:
         revoke_cookies: Revoke cookies acceptance
+      user_menu:
+        conversations: Conversations
+        notifications: Notifications

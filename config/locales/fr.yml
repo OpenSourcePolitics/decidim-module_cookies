@@ -30,3 +30,6 @@ fr:
     decidim:
       footer:
         revoke_cookies: Annuler l'acceptation des cookies
+      user_menu:
+        conversations: Conversations
+        notifications: Notifications
