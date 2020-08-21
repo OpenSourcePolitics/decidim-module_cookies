@@ -22,9 +22,6 @@
               decidim_session: {
                   description: "<%= I18n.t('decidim_session.description', scope: "decidim.components.cookies") %>",
               },
-              matomo: {
-                  description: "<%= I18n.t('matomo.description', scope: "decidim.components.cookies") %>",
-              },
               purposes: {
                   analytics: "<%= I18n.t('analytics', scope: "decidim.components.cookies.purposes") %>",
                   security: "<%= I18n.t('security', scope: "decidim.components.cookies.purposes") %>",
@@ -58,6 +55,9 @@
                 required: <%= cookie[:required].nil? ? false : cookie[:required] %>
             }
         );
+        window.orejimeConfig.translations["<%= I18n.locale %>"]["<%= cookie[:name].to_s %>"] = {
+            description: "<%= I18n.t("#{cookie[:name].to_s.downcase}.description", scope: "decidim.components.cookies") %>"
+        };
         <% end %>
       <% end %>
   </script>
