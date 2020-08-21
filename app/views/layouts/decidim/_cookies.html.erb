@@ -22,9 +22,6 @@
               decidim_session: {
                   description: "<%= I18n.t('decidim_session.description', scope: "decidim.components.cookies") %>",
               },
-              matomo: {
-                  description: "<%= I18n.t('matomo.description', scope: "decidim.components.cookies") %>",
-              },
               purposes: {
                   analytics: "<%= I18n.t('analytics', scope: "decidim.components.cookies.purposes") %>",
                   security: "<%= I18n.t('security', scope: "decidim.components.cookies.purposes") %>",
@@ -37,28 +34,31 @@
       };
 
       <% if current_organization.logo.present? %>
-            window.orejimeConfig.logo = {
-                src: "<%= current_organization.logo.medium.url %>",
-                alt: "<%= current_organization.name %>"
-            };
+      window.orejimeConfig.logo = {
+          src: "<%= current_organization.logo.medium.url %>",
+          alt: "<%= current_organization.name %>"
+      };
       <% end %>
 
-      <% if Rails.application.config.cookies.present? %>
-        <% Rails.application.config.cookies.each do |cookie| %>
-          window.orejimeConfig.apps.push(
-              {
-                  name: "<%= cookie[:name].to_s %>",
-                  title: "<%= cookie[:title].to_s %>",
-                  <% if cookie[:cookies].present? %>
-                  cookies: <%= raw cookie[:cookies] %>,
-                  <% end %>
-                  <% if cookie[:purposes].present? %>
-                  purposes: <%= raw cookie[:purposes] %>,
-                  <% end %>
-                  required: <%= cookie[:required].nil? ? false : cookie[:required] %>
-              }
-              );
-        <% end %>
+      <% if Rails.application.config.respond_to?(:cookies) %>
+      <% Rails.application.config.cookies.each do |cookie| %>
+      window.orejimeConfig.apps.push(
+          {
+              name: "<%= cookie[:name].to_s %>",
+              title: "<%= cookie[:title].to_s %>",
+              <% if cookie[:cookies].present? %>
+              cookies: <%= raw cookie[:cookies] %>,
+              <% end %>
+              <% if cookie[:purposes].present? %>
+              purposes: <%= raw cookie[:purposes] %>,
+              <% end %>
+              required: <%= cookie[:required].nil? ? false : cookie[:required] %>
+          }
+      );
+      window.orejimeConfig.translations["<%= I18n.locale %>"]["<%= cookie[:name].to_s %>"] = {
+          description: "<%= I18n.t("#{cookie[:name].to_s.downcase}.description", scope: "decidim.components.cookies") %>"
+      };
+      <% end %>
       <% end %>
   </script>
 <% end %>
