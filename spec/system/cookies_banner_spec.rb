@@ -41,6 +41,7 @@ describe "Cookies", type: :system do
   context "when no other cookies are defined" do
     before do
       click_button "Learn more"
+      allow(Rails.application.config).to receive(:respond_to?).with(:cookies).and_return(false)
     end
 
     it "shows the default cookies" do
