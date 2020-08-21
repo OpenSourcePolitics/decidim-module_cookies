@@ -72,4 +72,17 @@ describe "Cookies", type: :system do
       end
     end
   end
+
+  context "when no other cookies are defined" do
+    before do
+      click_button "Learn more"
+    end
+
+    it "shows the default cookies" do
+      within ".orejime-ModalWrapper" do
+        expect(page).to have_content "decidim-cc"
+        expect(page).to have_content "decidim_session"
+      end
+    end
+  end
 end

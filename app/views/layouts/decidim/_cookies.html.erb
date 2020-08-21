@@ -43,7 +43,7 @@
             };
       <% end %>
 
-      <% if Rails.application.config.cookies.present? %>
+      <% if Rails.application.config.respond_to?(:cookies) %>
         <% Rails.application.config.cookies.each do |cookie| %>
         window.orejimeConfig.apps.push(
             {
