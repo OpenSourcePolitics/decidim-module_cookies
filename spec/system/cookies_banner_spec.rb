@@ -53,12 +53,12 @@ describe "Cookies", type: :system do
       allow(Rails.application.config).to receive(:cookies).and_return(false)
 
       Rails.application.config.cookies = [
-          {
-              name: "matomo",
-              title: "Matomo",
-              cookies: %w(matomo_session pk_id pk_ses _pk_ref _pk_cvar),
-              purposes: %w(tracking analytics)
-          }
+        {
+          name: "matomo",
+          title: "Matomo",
+          cookies: %w(matomo_session pk_id pk_ses _pk_ref _pk_cvar),
+          purposes: %w(tracking analytics)
+        }
       ]
     end
 

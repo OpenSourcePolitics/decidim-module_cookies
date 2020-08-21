@@ -19,16 +19,18 @@ module Decidim
         app.config.assets.precompile += %w(decidim_cookies_manifest.js decidim_cookies_manifest.css)
       end
 
-      initializer "decidim_cookies.cookies" do |app|
-        app.config.cookies = [
-          {
-              name: "jsessionid",
-              title: "JSESSIONID",
-              cookies: %w(JSESSIONID),
-              purposes: %w(session tracking analytics)
-          }
-        ]
-      end
+      # Example: Add cookies to the banner
+      #
+      # initializer "decidim_cookies.cookies" do |app|
+      #   app.config.cookies = [
+      #    {
+      #     name: "jsessionid",
+      #     title: "JSESSIONID",
+      #     cookies: %w(JSESSIONID),
+      #     purposes: %w(session tracking analytics)
+      #   }
+      # ]
+      # end
     end
   end
 end
