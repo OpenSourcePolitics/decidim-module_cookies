@@ -8,6 +8,7 @@ gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.21-stable"
 gem "decidim-cookies", path: "."
 
 gem "bootsnap", "~> 1.3"
+gem "deepl-rb"
 
 gem "puma", "~> 4.3.3"
 gem "uglifier", "~> 4.1"
