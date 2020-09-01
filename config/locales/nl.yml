@@ -9,12 +9,9 @@ nl:
         consent_modal:
           description: Je kan kiezen om slechts bepaalde cookies te accepteren.
         decidim:
-          description: Maakt het mogelijk om te controleren of de gebruiker de cookies
-            heeft geaccepteerd
+          description: Maakt het mogelijk om te controleren of de gebruiker de cookies heeft geaccepteerd
         decidim_session:
-          description: Maakt het mogelijk om de gebruikerssessie voor een beperkte
-tijd actief te houden. Deze dient om de gebruikerservaring te verbeteren
-op het platform.
+          description: Maakt het mogelijk om de gebruikerssessie voor een beperkte tijd actief te houden. Deze dient om de gebruikerservaring te verbeteren op het platform.
         matomo:
           description: Gebruiksanalyse op de website te voeren, en zo het platform permanent te optimaliseren voor de gebruikers.
         name: Cookies
