@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 gem "decidim", git: "https://github.com/decidim/decidim", branch: "develop"
 gem "decidim-cookies", path: "."
-
+gem "deepl-rb"
 gem "bootsnap", "~> 1.3"
 
 gem "puma", "~> 4.3.3"
