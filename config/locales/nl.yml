@@ -1,0 +1,31 @@
+---
+nl:
+  decidim:
+    components:
+      cookies:
+        accept: Accepteer alle
+        analytics:
+          description: Maakt het mogelijk om bij te houden om de gebruikerservaring
+            te verbeteren
+        consent_modal:
+          description: Deze modaliteit geeft de mogelijkheid om de gewenste cookies
+            te filteren.
+        decidim:
+          description: Maakt het mogelijk om te controleren of de gebruiker de cookies
+            heeft geaccepteerd
+        decidim_session:
+          description: Maakt het mogelijk om de gebruikerssessie voor een beperkte
+            tijd actief te houden. Het is nodig om de gebruikerservaring te verbeteren
+            op Decidim
+        jsessionid:
+          description: De JSESSIONID-cookie wordt gebruikt om een sessie-identificatiecode
+            op te slaan, zodat New Relic het aantal sessies voor een toepassing kan
+            monitoren.
+        name: Cookies
+        purposes:
+          ads: Advertenties
+          analytics: Analytics
+          checking: Controleer de acceptatie van de gebruiker
+          security: Beveiliging
+          session: Sessie
+          tracking: Het volgen van
