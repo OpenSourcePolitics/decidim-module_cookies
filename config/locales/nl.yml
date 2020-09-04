@@ -1,0 +1,29 @@
+---
+nl:
+  decidim:
+    components:
+      cookies:
+        accept: Accepteer alle
+        analytics:
+          description: Gebruiksanalyse op de website te voeren, en zo het platform permanent te optimaliseren voor de gebruikers.
+        consent_modal:
+          description: Je kan kiezen om slechts bepaalde cookies te accepteren.
+        decidim:
+          description: Maakt het mogelijk om te controleren of de gebruiker de cookies heeft geaccepteerd
+        decidim_session:
+          description: Maakt het mogelijk om de gebruikerssessie voor een beperkte tijd actief te houden. Deze dient om de gebruikerservaring te verbeteren op het platform.
+        matomo:
+          description: Gebruiksanalyse op de website te voeren, en zo het platform permanent te optimaliseren voor de gebruikers.
+        name: Cookies
+        purposes:
+          ads: Advertenties
+          analytics: Gebruiksanalyse
+          checking: Controleer de acceptatie door de gebruiker
+          security: Beveiliging
+          session: Sessie
+          tracking: Het volgen van
+  layouts:
+    decidim:
+      user_menu:
+        conversations: Conversaties
+        notifications: Meldingen
