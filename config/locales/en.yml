@@ -9,6 +9,9 @@ en:
         consent_modal:
           description: This modal gives the opportunity to filter the cookies you
             want.
+        consent_notice:
+          description: "We collect and process your personal information for the following purposes: {purposes}"
+        decline: Decline
         decidim:
           description: Allows to check if the user has accepted the cookies
         decidim_session:

@@ -16,6 +16,10 @@
               consentModal: {
                   description: "<%= I18n.t('consent_modal.description', scope: "decidim.components.cookies") %>",
               },
+              consentNotice: {
+                  description: "<%= I18n.t('consent_notice.description', scope: "decidim.components.cookies") %>",
+              },
+              decline : "<%= I18n.t('decline', scope: "decidim.components.cookies") %>",
               decidim: {
                   description: "<%= I18n.t('decidim.description', scope: "decidim.components.cookies") %>",
               },
@@ -58,6 +62,8 @@
       window.orejimeConfig.translations["<%= I18n.locale %>"]["<%= cookie[:name].to_s %>"] = {
           description: "<%= I18n.t("#{cookie[:name].to_s.downcase}.description", scope: "decidim.components.cookies") %>"
       };
+
+      console.log(window.orejimeConfig.getPurposes());
       <% end %>
       <% end %>
   </script>
