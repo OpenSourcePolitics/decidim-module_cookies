@@ -9,6 +9,9 @@ fr:
             utilisateur
         consent_modal:
           description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
+        consent_notice:
+          description: "Nous collectons et traitons vos informations personnelles dans le but suivant: {purposes}"
+        decline: Refuser
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
