@@ -15,6 +15,7 @@ fr:
         consent_notice:
           description: "Nous collectons et traitons vos informations personnelles dans le but suivant: {purposes}."
           learn_more: En savoir plus
+        decline: Refuser
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:

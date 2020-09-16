@@ -8,6 +8,13 @@ nl:
           description: Gebruiksanalyse op de website te voeren, en zo het platform permanent te optimaliseren voor de gebruikers.
         consent_modal:
           description: Je kan kiezen om slechts bepaalde cookies te accepteren.
+          privacy_policy:
+            name: privacybeleid
+            text: Lees ons privacybeleid voor meer informatie {privacyPolicy}.
+        consent_notice:
+          description: "Wij verzamelen en verwerken uw persoonlijke gegevens voor de volgende doeleinden: {purposes}"
+          learn_more: Lees meer
+        decline: Afwijzen
         decidim:
           description: Maakt het mogelijk om te controleren of de gebruiker de cookies heeft geaccepteerd
         decidim_session:
