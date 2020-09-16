@@ -26,7 +26,8 @@
   &-AppItem-title,
   &-Notice-purposes,
   &-Modal-privacyPolicyLink{
-    color: var(--secondary);
+    color: var(--ternary);
+    font-style: italic;
   }
 
   &-Button{
