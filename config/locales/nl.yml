@@ -12,6 +12,7 @@ nl:
             te filteren.
         consent_notice:
           description: "Wij verzamelen en verwerken uw persoonlijke gegevens voor de volgende doeleinden: {purposes}"
+          learn_more: Lees meer
         decline: Afwijzen
         decidim:
           description: Maakt het mogelijk om te controleren of de gebruiker de cookies
