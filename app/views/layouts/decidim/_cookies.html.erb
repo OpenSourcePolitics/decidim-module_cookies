@@ -15,6 +15,14 @@
               },
               consentModal: {
                   description: "<%= I18n.t('consent_modal.description', scope: "decidim.components.cookies") %>",
+                  privacyPolicy: {
+                      name: "<%= I18n.t('consent_modal.privacy_policy.name', scope: "decidim.components.cookies") %>",
+                      text: "<%= I18n.t('consent_modal.privacy_policy.text', scope: "decidim.components.cookies") %>",
+                  }
+              },
+              consentNotice: {
+                  description: "<%== I18n.t('consent_notice.description', scope: "decidim.components.cookies") %>",
+                  learnMore: "<%= I18n.t('consent_notice.learn_more', scope: "decidim.components.cookies") %>",
               },
               decidim: {
                   description: "<%= I18n.t('decidim.description', scope: "decidim.components.cookies") %>",
