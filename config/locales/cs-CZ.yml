@@ -11,9 +11,8 @@ cs:
             name: privacy policy
             text: To learn more, please read our {privacyPolicy}.
         consent_notice:
-          description: "We collect and process your personal information for the following purposes: {purposes}."
+          description: 'We collect and process your personal information for the following purposes: {purposes}.'
           learn_more: Learn more
-        decline: Decline
         decidim:
           description: Umožňuje zkontrolovat, zda uživatel soubory cookie přijal
         decidim_session:
