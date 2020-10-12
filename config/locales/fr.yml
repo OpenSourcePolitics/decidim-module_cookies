@@ -11,9 +11,8 @@ fr:
             name: privacy policy
             text: To learn more, please read our {privacyPolicy}.
         consent_notice:
-          description: "We collect and process your personal information for the following purposes: {purposes}."
+          description: 'We collect and process your personal information for the following purposes: {purposes}.'
           learn_more: Learn more
-        decline: Decline
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
