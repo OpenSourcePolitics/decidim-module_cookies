@@ -7,6 +7,13 @@ fr:
           description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
         consent_modal:
           description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
+          privacy_policy:
+            name: politique de confidentialité
+            text: Pour en savoir plus, merci de lire notre {privacyPolicy}.
+        consent_notice:
+          description: "Nous collectons et traitons vos informations personnelles dans le but suivant: {purposes}."
+          learn_more: En savoir plus
+        decline: Refuser
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
@@ -25,3 +32,6 @@ fr:
     decidim:
       footer:
         revoke_cookies: Annuler l'acceptation des cookies
+      user_menu:
+        conversations: Conversations
+        notifications: Notifications
