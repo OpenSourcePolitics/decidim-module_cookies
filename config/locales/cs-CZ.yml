@@ -17,6 +17,7 @@ cs:
           description: Umožňuje zkontrolovat, zda uživatel soubory cookie přijal
         decidim_session:
           description: Umožňuje udržovat relaci uživatele aktivní po omezenou dobu. Je nutný ke zlepšení uživatelského komfortu v Decidim
+        decline: Decline
         matomo:
           description: Umožňuje sledování za účelem zlepšení uživatelské zkušenosti
         name: Cookies

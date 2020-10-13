@@ -18,6 +18,7 @@ fr:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
           description: Permet de maintenir la session d'un utilisateur active pour un temps limité. Ce cookie est obligatoire pour accroitre l'expérience utilisateur sur Decidim
+        decline: Refuser
         matomo:
           description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
         name: Cookies
