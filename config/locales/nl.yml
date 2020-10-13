@@ -31,6 +31,8 @@ nl:
           tracking: Het volgen van
   layouts:
     decidim:
+      footer:
+        revoke_cookies: Cookie instellingen
       user_menu:
         conversations: Conversaties
         notifications: Meldingen
