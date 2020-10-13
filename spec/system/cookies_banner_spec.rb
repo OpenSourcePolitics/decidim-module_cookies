@@ -28,7 +28,7 @@ describe "Cookies", type: :system do
 
     it "shows the revoke acceptance link in footer" do
       within ".footer-nav" do
-        expect(page).to have_link("Revoke cookies acceptance", class: "reset-button")
+        expect(page).to have_link("Revoke cookies acceptance", id: "reset-button")
       end
     end
   end

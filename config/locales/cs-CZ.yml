@@ -1,0 +1,27 @@
+cs:
+  decidim:
+    components:
+      cookies:
+        accept: Přijmout vše
+        analytics:
+          description: Umožňuje sledování za účelem zlepšení uživatelské zkušenosti
+        consent_modal:
+          description: Tento způsob umožňuje filtrovat soubory cookie, které chcete.
+        decidim:
+          description: Umožňuje zkontrolovat, zda uživatel soubory cookie přijal
+        decidim_session:
+          description: Umožňuje udržovat relaci uživatele aktivní po omezenou dobu. Je nutný ke zlepšení uživatelského komfortu v Decidim
+        matomo:
+          description: Umožňuje sledování za účelem zlepšení uživatelské zkušenosti
+        name: Cookies
+        purposes:
+          ads: Reklamy
+          analytics: Analytics
+          checking: Zkontrolujte souhlas uživatele
+          security: Zabezpečení
+          session: Seance
+          tracking: Sledování
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Odmítnutí přijetí cookies

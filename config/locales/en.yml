@@ -13,14 +13,15 @@ en:
             name: privacy policy
             text: To learn more, please read our {privacyPolicy}.
         consent_notice:
-          description: "We collect and process your personal information for the following purposes: {purposes}."
+          description: 'We collect and process your personal information for the following
+            purposes: {purposes}.'
           learn_more: Learn more
-        decline: Decline
         decidim:
           description: Allows to check if the user has accepted the cookies
         decidim_session:
           description: Allows to keep the user session active for a limited time.
             It is required to improve user experience on Decidim
+        decline: Decline
         matomo:
           description: Allows to track to improve user experience
         name: Cookies
