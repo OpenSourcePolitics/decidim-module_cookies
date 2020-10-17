@@ -8,16 +8,16 @@ cs:
         consent_modal:
           description: Tento způsob umožňuje filtrovat soubory cookie, které chcete.
           privacy_policy:
-            name: privacy policy
-            text: To learn more, please read our {privacyPolicy}.
+            name: zásady ochrany osobních údajů
+            text: Chcete-li se dozvědět více, přečtěte si prosím naše {privacyPolicy}.
         consent_notice:
-          description: 'We collect and process your personal information for the following purposes: {purposes}.'
-          learn_more: Learn more
+          description: 'Vaše osobní údaje shromažďujeme a zpracováváme pro následující účely: {purposes}.'
+          learn_more: Zjistit více
         decidim:
           description: Umožňuje zkontrolovat, zda uživatel soubory cookie přijal
         decidim_session:
           description: Umožňuje udržovat relaci uživatele aktivní po omezenou dobu. Je nutný ke zlepšení uživatelského komfortu v Decidim
-        decline: Decline
+        decline: Odmítnout
         matomo:
           description: Umožňuje sledování za účelem zlepšení uživatelské zkušenosti
         name: Cookies
@@ -33,5 +33,5 @@ cs:
       footer:
         revoke_cookies: Odmítnutí přijetí cookies
       user_menu:
-        conversations: Conversations
-        notifications: Notifications
+        conversations: Konverzace
+        notifications: Oznámení
