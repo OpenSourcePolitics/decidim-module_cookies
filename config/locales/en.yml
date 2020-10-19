@@ -9,6 +9,9 @@ en:
         consent_modal:
           description: This modal gives the opportunity to filter the cookies you
             want.
+          privacy_policy:
+            name: privacy policy
+            text: To learn more, please read our {privacyPolicy}.
         consent_notice:
           description: "We collect and process your personal information for the following purposes: {purposes}"
           learn_more: Learn more
