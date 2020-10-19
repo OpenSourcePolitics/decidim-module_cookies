@@ -13,9 +13,9 @@ en:
             name: privacy policy
             text: To learn more, please read our {privacyPolicy}.
         consent_notice:
-          description: "We collect and process your personal information for the following purposes: {purposes}."
+          description: 'We collect and process your personal information for the following
+            purposes: {purposes}.'
           learn_more: Learn more
-        decline: Decline
         decidim:
           description: Allows to check if the user has accepted the cookies
         decidim_session:
