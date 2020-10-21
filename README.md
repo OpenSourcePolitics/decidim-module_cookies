@@ -21,6 +21,15 @@ And then execute:
 ```bash
 bundle install
 ```
+## Usage
+When installed the banner will appear at the bottom right of the page.
+![cookie banner](https://i.imgur.com/WUisjMy.png)
+
+When the user clicks on "Learn more" he will get a detail page of all cookies declared (see "how to add a cookie bellow").
+![details](https://i.imgur.com/i0M5mn7.png)
+
+After accepting or saving preferences the user will be able to revoke cookie acceptance by clicking a link the footer. (⚠️ the link only appears after a refresh of the page or navigating to another one).
+![revoke](https://i.imgur.com/AeGBXgj.png)
 
 ## More informations
 
