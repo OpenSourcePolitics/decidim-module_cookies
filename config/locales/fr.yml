@@ -8,26 +8,26 @@ fr:
         consent_modal:
           description: Cette fenêtre vous permet de filtrer les cookies que vous voulez.
           privacy_policy:
-            name: privacy policy
-            text: To learn more, please read our {privacyPolicy}.
+            name: politique de confidentialité
+            text: Pour plus d'informations, lire notre {privacyPolicy}.
         consent_notice:
-          description: 'We collect and process your personal information for the following purposes: {purposes}.'
-          learn_more: Learn more
+          description: 'Nous collectons et analysons vos informations personnelles pour les buts suivants: {purposes}.'
+          learn_more: En savoir plus
         decidim:
           description: Permet de vérifier quels cookies l'utilisateur accepte
         decidim_session:
           description: Permet de maintenir la session d'un utilisateur active pour un temps limité. Ce cookie est obligatoire pour accroitre l'expérience utilisateur sur Decidim
-        decline: Decline
+        decline: Refuser
         matomo:
           description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
         name: Cookies
         purposes:
           ads: Contenu additionnel
           analytics: Analyses
-          checking: Verifier le consentement de l'utilisateur
+          checking: Vérifier le consentement de l'utilisateur
           security: Sécurité
           session: Session
-          tracking: Tracking
+          tracking: Pistage
   layouts:
     decidim:
       footer:
