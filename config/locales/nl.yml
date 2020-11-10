@@ -10,6 +10,9 @@ nl:
         consent_modal:
           description: Deze modaliteit geeft de mogelijkheid om de gewenste cookies
             te filteren.
+          privacy_policy:
+            name: privacybeleid
+            text: Voor meer informatie, lees ons {privacyPolicy}.
         consent_notice:
           description: "Wij verzamelen en verwerken uw persoonlijke gegevens voor de volgende doeleinden: {purposes}"
           learn_more: Lees meer
