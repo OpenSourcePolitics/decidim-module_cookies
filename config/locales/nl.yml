@@ -24,6 +24,8 @@ nl:
           description: Maakt het mogelijk om de gebruikerssessie voor een beperkte
             tijd actief te houden. Het is nodig om de gebruikerservaring te verbeteren
             op Decidim
+        matomo:
+          description: Gebruiksanalyse op de website te voeren, en zo het platform permanent te optimaliseren voor de gebruikers.
         jsessionid:
           description: De JSESSIONID-cookie wordt gebruikt om een sessie-identificatiecode
             op te slaan, zodat New Relic het aantal sessies voor een toepassing kan
@@ -36,3 +38,7 @@ nl:
           security: Beveiliging
           session: Sessie
           tracking: Het volgen van
+  layouts:
+    decidim:
+      footer:
+        revoke_cookies: Acceptatie van cookies annuleren

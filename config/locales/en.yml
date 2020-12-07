@@ -13,16 +13,20 @@ en:
             name: privacy policy
             text: To learn more, please read our {privacyPolicy}.
         consent_notice:
-          description: "We collect and process your personal information for the following purposes: {purposes}"
+          description: 'We collect and process your personal information for the following
+            purposes: {purposes}'
           learn_more: Learn more
-        decline: Decline
         decidim:
           description: Allows to check if the user has accepted the cookies
         decidim_session:
           description: Allows to keep the user session active for a limited time.
             It is required to improve user experience on Decidim
+        decline: Decline
         jsessionid:
-          description: The JSESSIONID cookie is used to store a session identifier so that New Relic can monitor session counts for an application.
+          description: The JSESSIONID cookie is used to store a session identifier
+            so that New Relic can monitor session counts for an application.
+        matomo:
+          description: Allows to track to improve user experience
         name: Cookies
         purposes:
           ads: Ads

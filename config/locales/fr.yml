@@ -19,6 +19,8 @@ fr:
           description: Permet de maintenir la session d'un utilisateur active pour
             un temps limité. Ce cookie est obligatoire pour accroitre l'expérience
             utilisateur sur Decidim
+        matomo:
+          description: Permet de récolter des informations afin d'améliorer l'expérience utilisateur
         jsessionid:
           description: Le cookie JSESSIONID permet de sauvegarder un identifiant de session. Celui-ci est nécessaire pour permettre à New Relic de monitorer la session.
         name: Cookies
