@@ -9,31 +9,35 @@
 
       window.orejimeConfig.translations = {
           "<%= I18n.locale %>": {
-              accept: "<%= I18n.t('accept', scope: "decidim.components.cookies") %>",
+              accept: "<%= I18n.t("accept", scope: "decidim.components.cookies") %>",
               analytics: {
-                  description: "<%= I18n.t('analytics.description', scope: "decidim.components.cookies") %>",
+                  description: "<%= I18n.t("analytics.description", scope: "decidim.components.cookies") %>",
               },
               consentModal: {
-                  description: "<%= I18n.t('consent_modal.description', scope: "decidim.components.cookies") %>",
+                  description: "<%= I18n.t("consent_modal.description", scope: "decidim.components.cookies") %>",
+                  privacyPolicy: {
+                      name: "<%= I18n.t("consent_modal.privacy_policy.name", scope: "decidim.components.cookies") %>",
+                      text: "<%= I18n.t("consent_modal.privacy_policy.text", scope: "decidim.components.cookies") %>",
+                  }
               },
               consentNotice: {
-                  description: "<%== I18n.t('consent_notice.description', scope: "decidim.components.cookies") %>",
-                  learnMore: "<%== I18n.t('consent_notice.learn_more', scope: "decidim.components.cookies") %>",
+                  description: "<%== I18n.t("consent_notice.description", scope: "decidim.components.cookies") %>",
+                  learnMore: "<%== I18n.t("consent_notice.learn_more", scope: "decidim.components.cookies") %>",
               },
-              decline : "<%= I18n.t('decline', scope: "decidim.components.cookies") %>",
+              decline : "<%= I18n.t("decline", scope: "decidim.components.cookies") %>",
               decidim: {
-                  description: "<%= I18n.t('decidim.description', scope: "decidim.components.cookies") %>",
+                  description: "<%= I18n.t("decidim.description", scope: "decidim.components.cookies") %>",
               },
               decidim_session: {
-                  description: "<%= I18n.t('decidim_session.description', scope: "decidim.components.cookies") %>",
+                  description: "<%= I18n.t("decidim_session.description", scope: "decidim.components.cookies") %>",
               },
               purposes: {
-                  analytics: "<%= I18n.t('analytics', scope: "decidim.components.cookies.purposes") %>",
-                  security: "<%= I18n.t('security', scope: "decidim.components.cookies.purposes") %>",
-                  ads: "<%= I18n.t('ads', scope: "decidim.components.cookies.purposes") %>",
-                  tracking: "<%= I18n.t('tracking', scope: "decidim.components.cookies.purposes") %>",
-                  session: "<%= I18n.t('session', scope: "decidim.components.cookies.purposes") %>",
-                  checking: "<%==  escape_javascript I18n.t('checking', scope: "decidim.components.cookies.purposes") %>"
+                  analytics: "<%= I18n.t("analytics", scope: "decidim.components.cookies.purposes") %>",
+                  security: "<%= I18n.t("security", scope: "decidim.components.cookies.purposes") %>",
+                  ads: "<%= I18n.t("ads", scope: "decidim.components.cookies.purposes") %>",
+                  tracking: "<%= I18n.t("tracking", scope: "decidim.components.cookies.purposes") %>",
+                  session: "<%= I18n.t("session", scope: "decidim.components.cookies.purposes") %>",
+                  checking: "<%== escape_javascript I18n.t("checking", scope: "decidim.components.cookies.purposes") %>"
               }
           }
       };
