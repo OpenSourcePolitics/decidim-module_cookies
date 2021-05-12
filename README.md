@@ -1,3 +1,5 @@
+![cookies_banner-02](https://user-images.githubusercontent.com/11473995/117935732-50b1c200-b304-11eb-9446-8a762ee53b34.png)
+
 # Decidim::Cookies
 
 This module provide a cookies banner using Orejime (https://github.com/empreinte-digitale/orejime).
