@@ -4,19 +4,19 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", git: "https://github.com/decidim/decidim", branch: "release/0.23-stable"
+gem "decidim", git: "https://github.com/decidim/decidim", branch: "release/0.24-stable"
 gem "decidim-cookies", path: "."
 
 gem "bootsnap", "~> 1.3"
 gem "deepl-rb"
 
-gem "puma", "~> 4.3.3"
+gem "puma", "~> 5.0"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", git: "https://github.com/decidim/decidim", branch: "release/0.23-stable"
+  gem "decidim-dev", git: "https://github.com/decidim/decidim", branch: "release/0.24-stable"
 end
 
 group :development do
